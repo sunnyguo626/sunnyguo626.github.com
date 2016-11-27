@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0" />
+<title>无标题文档</title>
+<script>
+	(function(win,doc){
+		function change(){
+			doc.documentElement.style.fontSize=doc.documentElement.clientWidth*20/320+'px';	
+		}
+		change();
+		win.addEventListener('resize',change,false);	
+	})(window,document)
+</script>
+<style>
+	*{ padding:0; margin:0; list-style:none;}
+	h1,h2,h3,h4,h5,h6{font-weight:normal; font-size:12px;}
+	.fl{float:left;}
+	.fr{float:right;}
+	.clearfix:after{display:block; content:''; clear:both;}
+	img{ width:100%; vertical-align:top;}
+	.head{ width:16rem; height:2.5rem; background:-webkit-linear-gradient(#FFF,#ebebeb); padding-top:0.75rem; box-sizing:border-box; position:relative;}
+	h1{ width:3.7rem; height:1rem; background:url(img/logo.png) no-repeat; background-size:100%; margin:0 auto;}
+	.head a{ position:absolute; top:0.5rem; left:0.5rem; width:3.175rem; height:1.55rem; background:url(img/backBtn.png); background-size:100%; text-indent:-999em;}
+	.picbox ul{ display:-webkit-box; -webkit-box-pack:center; -webkit-box-align:center; margin-top:0.5rem;}
+	.picbox li{ width:0.25rem; height:0.25rem; background:#666; border-radius:50%; 
+	margin-right:0.25rem;}
+	.active{ background:#F40 !important;}
+	.icon{ width:2rem; height:2rem; background-size:100%; display:inline-block; margin-bottom:0.4rem; vertical-align:top;background-repeat:no-repeat;}
+	.icon1{ background-image:url(img/icon1.png); }
+	.icon2{ background-image:url(img/icon2.png);}
+	.icon3{ background-image:url(img/icon3.png);}
+	.icon4{ background-image:url(img/icon4.png);}
+	.menu{ margin:0 0.4rem 1.6rem;}
+	.menu p{ font-size:0.6rem;}
+	.menu a{ color:#999999; text-decoration:none;}
+	.menu li{ width:25%; float:left; text-align:center; margin-top:1rem;}
+	.content{ width:15rem; margin:0 auto;}
+	.sale{border-bottom: 4px solid #dcdcdc; height:1.25rem; margin-bottom:0.75rem;}
+	.sale h2{font-size: 0.7rem; height:0.75rem; border-left:4px solid #d51938; line-height:0.75rem; padding-left:0.5rem; color:#333; font-weight:bold;}
+	.sale h3{color:#333; font-weight:bold; font-size: 0.7rem;}
+	.first{margin-bottom:0.5rem;}
+	.first .color{width:1.5rem; height:3.35rem; font-size:0.9rem; line-height:3.35rem; color:#fff; font-weight:bold; text-align: center;}
+	.first .one{background:#e00202;}
+	.first .two{background:#ff4800;}
+	.first .three{background:#ff7300;}
+	.first .four{background:#ff9d00;}
+	.first .five{background:#ffa800;}
+	.first .six{background:#ffb400;}
+	.first .seven{background:#ffba00;}
+	.first .eight{background:#fcd000;}
+	.first .nine{background:#ffd719;}
+	.first .ten{background:#ffe152;}
+	.first img{width:5rem; height:3.35rem;}
+	.first .right{width:7.5rem; height:2.65rem; background:#f4f4f4; padding:0.7rem 0.5rem 0rem 0.5rem;}
+	.first .right .sale2 h3{color:#999999; font-size:0.6rem; margin-bottom:0.3rem;}
+	.first .right .sale2 h4{color:#999999; font-size:0.6rem;}
+	.first .right .sale2 h4 span{color:#c7223d;}
+	.first .right .sale3{ background:url(img/rooow.png) no-repeat right center; padding-right:0.75rem; font-size:0.8rem; color:#c7223d; font-weight:bold; background-size:0.3rem 0.6rem;}
+	.title{width:100%; height:2rem; background:#f5f5f5; line-height:2rem; text-align: center; font-size:0.8rem; color:#666666; font-weight:bold; margin-bottom:0.5rem;}
+	.thing{margin-bottom:0.5rem;}
+	.thing img{width:3.75rem; height:8.8rem;}
+	.thing .list1{width:11.25rem; border-top:1px solid #eeeeee; border-bottom:1px solid #eeeeee;}
+	.thing .list1 li{width:3.75rem; height:2.2rem; border-right:1px solid #eeeeee;border-bottom:1px solid #eeeeee; box-sizing: border-box; font-size:0.7rem; color:#999999; line-height:2.2rem; text-align: center;}
+	.thing .list1 li.red{color:#d51942;}
+	.apple{width:15rem; height:4rem; margin-bottom:0.5rem;}
+	.apple li{width:5rem; height:1.2rem; color:#fff; padding-top:2.8rem; font-size:0.7rem; text-align: center;}
+	.apple .ap{background:url(img/apple.png) no-repeat center 0.75rem #38a4f1; background-size:0.95rem 1.1rem;}
+	.apple .an{background:url(img/anzhuo.png) no-repeat center 0.75rem #8bca11; background-size:0.95rem 1.1rem;}
+	.apple .yi{background:url(img/yijian.png) no-repeat center 0.75rem #ff7404; background-size:0.95rem 0.85rem;}
+	.last{width:16rem; height:2.2rem; background:#f8f8f8; font-size:0.6rem; color:#333333; font-weight:bold; line-height:2.2rem;}
+	.last .login{margin:0 1.15rem 0 0.6rem;}
+	.last .zhu{margin-right:8.1rem;}
+	footer{width:16rem; height:3.1rem; text-align: center;background:#eeeeee;}
+	footer h2{color:#333333; font-weight: bold; font-size: 0.7rem; height:2.5rem; line-height:2.5rem;}
+	footer h3{font-size:0.5rem; color:#999999;}
+</style>
+</head>
+
+<body>
+	<!--header-->
+	<header class="head">
+    	<a href="#">返回</a>
+    	<h1></h1>
+    </header>
+    <div class="picbox">
+    	<img src="img/pic.png" />
+        <ul>
+        	<li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <ul class="menu clearfix">
+    	<li>
+        	<a href="#" class="icon icon1"></a>
+            <p><a href="#">商品</a></p>
+        </li>
+        <li>
+        	<a href="#" class="icon icon2"></a>
+            <p><a href="#">商品</a></p>
+        </li>
+        <li>
+        	<a href="#" class="icon icon3"></a>
+            <p><a href="#">聚宝盆</a></p>
+        </li>
+        <li>
+        	<a href="#" class="icon icon4"></a>
+            <p><a href="#">商品</a></p>
+        </li>
+        <li>
+        	<a href="#" class="icon icon1"></a>
+            <p><a href="#">商品</a></p>
+        </li>
+        <li>
+        	<a href="#" class="icon icon2"></a>
+            <p><a href="#">商品</a></p>
+        </li>
+        <li>
+        	<a href="#" class="icon icon3"></a>
+            <p><a href="#">聚宝盆</a></p>
+        </li>
+        <li>
+        	<a href="#" class="icon icon4"></a>
+            <p><a href="#">商品</a></p>
+        </li>
+    </ul>
+	<!--content-->
+	<section class="content">
+		<div class="sale clearfix">
+			<h2 class="fl">聚划算热卖排行</h2>
+			<h3 class="fr">TOP10</h3>
+		</div>
+		<div class="first clearfix">
+			<div class="color one fl">1</div>
+			<img src="img/yi.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="first clearfix">
+			<div class="color two fl">2</div>
+			<img src="img/er.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="first clearfix">
+			<div class="color three fl">3</div>
+			<img src="img/san.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="first clearfix">
+			<div class="color four fl">4</div>
+			<img src="img/si.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="first clearfix">
+			<div class="color five fl">5</div>
+			<img src="img/wu.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="first clearfix">
+			<div class="color six fl">6</div>
+			<img src="img/liu.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="first clearfix">
+			<div class="color seven fl">7</div>
+			<img src="img/qi.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="first clearfix">
+			<div class="color eight fl">8</div>
+			<img src="img/ba.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="first clearfix">
+			<div class="color nine fl">9</div>
+			<img src="img/jiu.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="first clearfix">
+			<div class="color ten fl">10</div>
+			<img src="img/shi.png" class="fl"/>
+			<div class="right fr">
+				<div class="sale2 fl">
+					<h3>已售68423</h3>
+					<h4><span>2.3</span>折   ￥299</h4>
+				</div>
+				<div class="sale3 fr">￥51</div>
+				
+			</div>
+		</div>
+		<div class="title">更多划算  逛起来！</div>
+		<div class="thing clearfix">
+			<img src="img/shang.png" alt="" class="fl"/>
+			<ul class="list1 fr">
+				<li class="red fl">服饰</li>
+				<li class="fl">配饰</li>
+				<li class="fl">美妆</li>
+				<li class="fl">鞋包</li>
+				<li class="fl">食品</li>
+				<li class="red fl">家居</li>
+				<li class="fl">运动</li>
+				<li class="red fl">电器</li>
+				<li class="fl">百货</li>
+				<li class="fl">母婴</li>
+				<li class="fl">数码</li>
+				<li class="fl">更多</li>
+			</ul>
+		</div>
+		<div class="title">精彩商品  逛起来！</div>
+		<div class="thing clearfix">
+			<img src="img/sheng.png" alt="" class="fl"/>
+			<ul class="list1 fr">
+				<li class="red fl">美食</li>
+				<li class="fl">教育</li>
+				<li class="fl">酒店</li>
+				<li class="fl">电影</li>
+				<li class="fl">生活服务</li>
+				<li class="red fl">卡卷</li>
+				<li class="fl">摄影</li>
+				<li class="red fl">粮油生鲜</li>
+				<li class="fl">门票</li>
+				<li class="fl">休闲娱乐</li>
+				<li class="fl"></li>
+				<li class="fl"></li>
+			</ul>
+		</div>
+		<div class="title">品质生活  逛起来！</div>
+		<div class="thing clearfix">
+			<img src="img/pai.png" alt="" class="fl"/>
+			<ul class="list1 fr">
+				<li class="fl">七匹狼</li>
+				<li class="red fl">粉红女郎</li>
+				<li class="fl">卓诗尼</li>
+				<li class="red fl">收纳博士</li>
+				<li class="fl">惠氏</li>
+				<li class="fl">夏乐</li>
+				<li class="fl">帕克伦</li>
+				<li class="fl">古今</li>
+				<li class="fl">九牧</li>
+				<li class="fl">诺奥</li>
+				<li class="fl">红豆</li>
+				<li class="fl">曼秀雷敦</li>
+			</ul>
+		</div>
+		<div class="title">品质折扣  逛起来！</div>
+		<ul class="apple clearfix">
+			<li class="ap fl">ios客户端</li>
+			<li class="an fl">安卓客户端</li>
+			<li class="yi fl">意见反馈</li>
+		</ul>
+	</section>
+	<div class="last clearfix">
+		<span class="login fl">登录</span>
+		<span class="zhu fl">注册</span>
+		<span class="fl">TOP</span>
+	</div>
+	<footer>
+		<h2>标准版   电脑版</h2>
+		<h3>@2013浙B2-20080224 服务中心</h3>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
